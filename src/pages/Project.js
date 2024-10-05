@@ -1,15 +1,15 @@
 import { useParams } from "react-router-dom";
 import gitIcon from "./../img/icons/gitHub-black.svg"
-import {projects} from "./../helpers/projectList"
+import { projects } from "./../helpers/projectList"
 import img from "./../img/projects/02-big.jpg"
-import { log } from "console";
+// import { log } from "console";
 
 const PRoject = () => {
-    // const {id} = useParams()
-    // const projeckt = projects[id]
+    const {id} = useParams()
+    const projeckt = projects[id]
     
     return (     <main className="section">
-        {/* <div className="container">
+        <div className="container">
             <div className="project-details">
 
                 <h1 className="title-1">{projeckt.title}</h1>
@@ -26,7 +26,7 @@ const PRoject = () => {
                 </a>
 
             </div>
-        </div> */}
+        </div>
     </main> );
 }
 export default PRoject;
